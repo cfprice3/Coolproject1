@@ -18,7 +18,7 @@
         <a class="link is-info">Search Breweries</a>
       </p>
       <p class="level-item has-text-centered">
-        <img src="https://bulma.io/images/bulma-type.png" alt="" style="height: 30px;">
+        <img src="b33r.png" alt="" style="height: 30px;">
       </p>
       <p class="level-item has-text-centered">
         <a class="link is-info">Check Weather</a>
@@ -28,10 +28,63 @@
       </p>
     </nav>
 
+    <section class="hero is-warning is-bold">
+      <img src="brewImg.jpg"  id= "headerImg" alt="hanging with brews">  
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            B33R:30
+          </h1>
+          <br>
+          <h2 class="subtitle">
+            “Beer is proof that God loves us and wants us to be happy.” - Benjamin Franklin
+          </h2>
+        </div>
+      </div>
+    </section>        
+
+  <section class="section">
+    <div class="container"> 
+      <div class = "columns">
+        <div class = "column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="beerGlass.jpg" alt="beer glasses">
+              </figure>
+            </div>
+      
+            <div class="content">
+              <p>Search a city below to find information about the local Breweries!</p>
+              <div class="input-group mb-3"> 
+                <input id="searchCity" type="text" class="input is-rounded is-warning" placeholder="Enter City Name">
+                <button id="searchBtn" class="button is-info"><span class="icon">
+                  <i class="fas fa-search"></i>
+                </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "column">
+          <div id="currentCity" >
+                    
+          </div>
+          
+          <div id="brewDetails"> 
+
+
+          </div> 
+      </div> 
+
+        </div>
+      </div>
+    </div>
+  </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    
+
   </body>
 </html>
