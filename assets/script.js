@@ -1,8 +1,6 @@
-// var queryUrl = "https://api.openbrewerydb.org/breweries?by_city=" + cityName;
-
 $("#searchBtn").on("click", function() {
 
-  // $('#breweries').addClass('show');
+
 
   // get the value of the input from user
   cityName = $("#searchCity").val();
@@ -10,7 +8,7 @@ $("#searchBtn").on("click", function() {
   $("#searchCity").val("");
 
   const queryUrl = "https://api.openbrewerydb.org/breweries?by_city=" + cityName;
-
+                    
   $.ajax({
     url: queryUrl,
     method: "GET"
@@ -46,19 +44,6 @@ $("#searchBtn").on("click", function() {
 })
 });
 
-// function formatPhoneNumber(phone) {
-//     var cleaned = ('' + phone).replace(/\D/g, '')
-//     var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
-//     if (match) {
-//       return '(' + match[1] + ') ' + match[2] + '-' + match[3]
-//     }
-//     return null
-//   }
-//   console.log(phone)
-
-// String input = "1234567890";
-//   String number = input.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
-//   System.out.printIn(number);
 
 function getBrew(response){
 console.log(response.name)
@@ -77,7 +62,7 @@ website.append(websiteTag)
 
 
 
-const address = $("<p>").addClass("card-text address").text("address: " + response.street + ", " + response.city + ", " + response.state + " " + response.postal_code)
+const address = $("<p>").addClass("card-text address").text("Address: " + response.street + ", " + response.city + ", " + response.state + " " + response.postal_code)
 
 
 
@@ -94,7 +79,4 @@ $("#currentCity").append(card)
 
 
 
-// function makeList() {
-//     let listItem = $("<li>").addClass("list-group-item").text(city);
-//     $(".list").append(listItem);
-//   }
+// -----------------------------------------------------------------
