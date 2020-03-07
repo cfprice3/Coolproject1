@@ -71,9 +71,10 @@ const city = $("<p>").addClass("card-text city").text(response.city);
 const state = $("<p>").addClass("card-text state").text(response.state);
 const postal = $("<p>").addClass("card-text postal").text(response.postal_code);
 const phone = $("<p>").addClass("card-text phone").text("Phone: " + response.phone);
+const website = $("<p>").addClass("card-text website").text("Website: ");
+const websiteTag = $("<a>").attr("href", response.website_url).text(response.website_url);
+website.append(websiteTag)
 
-
-const website = $("<p>").addClass("card-text website").text("Website: " + response.website_url);
 
 
 const address = $("<p>").addClass("card-text address").text("address: " + response.street + ", " + response.city + ", " + response.state + " " + response.postal_code)
