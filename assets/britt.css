@@ -1,0 +1,28 @@
+#headerImg {
+    object-fit: cover;
+    object-position: 0 95%;
+    width: 100%;
+    height: 300px;
+}
+
+/* .image {
+    border-style: solid;
+} */
+
+.card {
+    border-style: ridge;
+}
+
+p {
+    padding: 10px;
+}
+
+#searchCity, #searchBtn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+h2 {
+    font-size: 30px;
+}
