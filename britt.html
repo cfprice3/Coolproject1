@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B33R:30!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/britt.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <nav class="level">
+      <p class="level-item has-text-centered">
+        <a class="navbar-link" href="britt.html">Home</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Search Breweries</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <img src="assets/b33r.png" alt="" style="height: 30px;">
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Check Weather</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="navbar-link" href="contact.html">Contact</a>
+      </p>
+    </nav>
+    <section class="hero is-warning is-bold">
+      <img src="assets/brewImg.jpg"  id= "headerImg" alt="hanging with brews">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            B33R:30
+          </h1>
+          <br>
+          <h2 class="subtitle">
+            “Beer is proof that God loves us and wants us to be happy.” - Robert Downey Jr.
+          </h2>
+        </div>
+      </div>
+    </section>
+  <section class="section">
+    <div class="container">
+      <div class = "columns">
+        <div class = "column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/beerGlass.jpg" alt="beer glasses">
+              </figure>
+            </div>
+            <div class="content">
+              <p>Search a city below to find information about the local Breweries!</p>
+              <div class="input-group mb-3">
+                <input id="searchCity" type="text" class="input is-rounded is-warning" placeholder="Enter City Name">
+                <button id="searchBtn" class="button is-info"><span class="icon">
+                  <i class="fas fa-search"></i>
+                </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "column">
+          <div id="currentCity" >
+          </div>
+          <div id="brewDetails">
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+
+  <div class="media-object"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+   
+  <script>
+      var options = {
+        bottom: '64px', // default: '32px'
+        right: '40px', // default: '32px'
+        left: 'unfit', // default: 'unset'
+        time: '0.5s', // default: '0.3s'
+        mixColor: '#fff', // default: '#fff'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: false, // default: true,
+        label: '🌓', // default: ''
+        autoMatchOsTheme: true // default: true
+      }
+
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+  </script>
+    
+</body>
+</html>
+
